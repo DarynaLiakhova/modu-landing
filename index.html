@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>MODU</title>
+<meta name="description" content="MODU — premium DIY wooden kits to build, display and keep: Corner Coffee Shop, Marble Night City and Romantic Carousel.">
+<!-- head:meta -->
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="theme-color" content="#2b1e15">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="MODU">
+<meta property="og:title" content="MODU">
+<meta property="og:description" content="MODU — premium DIY wooden kits to build, display and keep: Corner Coffee Shop, Marble Night City and Romantic Carousel.">
+<meta property="og:image" content="img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<!-- /head:meta -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<svg class="sprite" aria-hidden="true" focusable="false">
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M3 12h17M14 6l6 6-6 6"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M16.5 16.5 21 21"/></symbol>
+  <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.2-4 4.2-6 8-6s6.800 2 8 6"/></symbol>
+  <symbol id="i-bag" viewBox="0 0 24 24"><path d="M5 8h14l-1 13H6L5 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></symbol>
+  <symbol id="i-bag-add" viewBox="0 0 24 24"><path d="M5 8h14l-1 13H6L5 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2M12 12v5M9.500 14.500h5"/></symbol>
+  <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M4 20c0-9 6-15 16-16-1 10-7 16-16 16z"/><path d="M4 20 15 9"/></symbol>
+  <symbol id="i-gift" viewBox="0 0 24 24"><path d="M3 9h18v4H3zM5 13v8h14v-8M12 9v12"/><path d="M12 9c-2-4-6-4-6-1.500S9 9 12 9zm0 0c2-4 6-4 6-1.500S15 9 12 9z"/></symbol>
+  <symbol id="i-gear" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><circle cx="12" cy="12" r="7"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.900 4.900 7 7M17 17l2.100 2.100M4.900 19.100 7 17M17 7l2.100-2.100"/></symbol>
+  <symbol id="i-home" viewBox="0 0 24 24"><path d="M3 11 12 3l9 8M5 9.500V21h14V9.500"/><path d="M10 21v-6h4v6"/></symbol>
+  <symbol id="i-rings" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2.500"/></symbol>
+  <symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 2c.800 6 3.200 8.800 10 10-6.800 1.200-9.200 4-10 10-.800-6-3.200-8.800-10-10 6.800-1.200 9.200-4 10-10z"/></symbol>
+  <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20s-7-4.500-7-10a4 4 0 0 1 7-2.600A4 4 0 0 1 19 10c0 5.500-7 10-7 10z"/></symbol>
+  <symbol id="i-people" viewBox="0 0 24 24"><circle cx="7" cy="7" r="2.200"/><circle cx="12" cy="5.500" r="2.200"/><circle cx="17" cy="7" r="2.200"/><path d="M3.500 20v-6a3.500 3.500 0 0 1 7 0v6M13.500 20v-6a3.500 3.500 0 0 1 7 0v6M8.500 20v-7.500a3.500 3.500 0 0 1 7 0V20"/></symbol>
+  <symbol id="i-infinity" viewBox="0 0 24 24"><path d="M12 12c-2-3-3.500-4-5.500-4a4 4 0 0 0 0 8c2 0 3.500-1 5.500-4zm0 0c2 3 3.500 4 5.500 4a4 4 0 0 0 0-8c-2 0-3.500 1-5.500 4z"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><path d="M3 6h18v12H3z"/><path d="m3 7 9 7 9-7"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-6-6.500-6-11a6 6 0 0 1 12 0c0 4.500-6 11-6 11z"/><circle cx="12" cy="10" r="2"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path d="M5 5l14 14M19 5 5 19"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M3 7h18M3 12h18M3 17h18"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24"><path d="M8 5v14l11-7z" fill="currentColor" stroke="none"/></symbol>
+  <symbol id="i-circle-arrow" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M8 12h8M13 9l3 3-3 3"/></symbol>
+  <symbol id="i-minus" viewBox="0 0 24 24"><path d="M5 12h14"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.500"/><path d="M12 6.500V12l3.500 2"/></symbol>
+  <symbol id="i-bulb" viewBox="0 0 24 24"><path d="M9 17h6M10 20.500h4M8.500 14.500A6 6 0 1 1 15.500 14.500c-.700.600-.900 1.300-.900 2.500H9.400c0-1.200-.200-1.900-.900-2.500z"/></symbol>
+  <symbol id="i-puzzle" viewBox="0 0 24 24"><path d="M9.500 4.500a2 2 0 1 1 4 0V6H18v4.500h-1.500a2 2 0 1 0 0 4H18V19h-4.500v-1.500a2 2 0 1 0-4 0V19H5v-4.500h1.500a2 2 0 1 0 0-4H5V6h4.500z"/></symbol>
+  <symbol id="i-zoom" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M16.500 16.500 21 21M11 8v6M8 11h6"/></symbol>
+  <symbol id="i-cart" viewBox="0 0 24 24"><path d="M3 4h2.500l2 11h10.500l2-8H7"/><circle cx="9.500" cy="19" r="1.300"/><circle cx="16.500" cy="19" r="1.300"/></symbol>
+  <symbol id="i-crank" viewBox="0 0 24 24"><circle cx="9" cy="14" r="6"/><circle cx="9" cy="14" r="1.500"/><path d="M9 14 18 5M16 3l4 4"/></symbol>
+  <symbol id="i-note" viewBox="0 0 24 24"><path d="M9 18V5l10-2v13"/><circle cx="6.500" cy="18" r="2.500"/><circle cx="16.500" cy="16" r="2.500"/></symbol>
+  <symbol id="i-logo" viewBox="0 0 723.8 158.0"><path fill-rule="evenodd" d="M188.5,2.2 153.8,2.2 129.5,27.0 127.2,30.0 94.2,64.5 92.8,66.8 89.0,63.8 31.2,2.5 1.5,2.2 1.0,2.8 1.0,9.2 0.2,11.2 0.5,24.2 0.0,28.5 0.8,59.0 0.0,90.2 0.2,155.2 3.2,155.8 42.2,155.5 41.8,76.5 42.5,72.5 44.0,73.0 85.8,116.8 87.0,117.5 97.5,117.5 128.2,85.5 145.0,69.0 145.5,69.8 145.0,88.2 144.8,155.0 145.2,155.5 187.8,155.5ZM394.5,2.2 393.8,3.8 393.2,47.8 393.2,122.5 392.8,155.0 393.2,155.5 466.5,155.5 476.5,155.0 488.0,153.5 503.2,149.5 517.5,142.8 527.0,135.8 534.8,127.8 541.8,117.5 546.5,107.2 550.8,90.8 551.5,78.0 549.2,61.2 545.8,49.8 542.2,42.2 538.0,35.2 531.8,27.5 526.5,22.5 517.5,15.8 508.0,10.5 498.0,6.8 484.5,3.5 468.8,1.8 408.2,1.8ZM436.2,40.2 469.0,40.2 477.5,41.2 489.5,45.8 494.5,49.2 499.5,54.0 503.5,59.8 506.5,67.0 508.2,75.2 508.2,83.2 507.5,88.0 504.5,96.8 501.5,102.0 496.0,108.0 490.2,112.2 486.0,114.5 476.0,117.5 468.8,118.5 435.2,118.2 435.5,41.2ZM570.0,1.5 569.2,2.2 568.8,81.2 568.0,88.5 568.5,94.2 571.8,109.8 574.5,117.2 579.5,126.5 586.5,135.5 595.8,143.8 601.2,147.2 611.0,152.0 622.8,155.5 640.2,158.0 651.0,158.0 659.8,157.2 673.8,154.2 682.0,151.2 690.2,147.0 696.8,142.5 702.2,137.8 710.8,127.8 716.2,118.5 720.5,107.2 723.2,94.2 723.8,85.8 723.0,56.5 723.0,1.5 682.2,1.5 681.5,2.0 680.5,25.8 680.5,77.0 681.0,86.5 679.5,95.5 677.8,100.5 675.0,105.8 672.0,110.0 668.5,113.5 661.5,117.8 655.2,120.0 649.5,121.2 635.8,120.8 631.0,119.5 626.0,117.2 620.5,113.2 617.2,109.8 614.5,105.5 611.8,98.8 610.0,90.5 610.2,1.5ZM295.0,0.0 294.5,0.2 294.2,38.0 294.8,38.8 303.5,40.2 309.5,42.8 317.0,47.5 322.0,52.5 326.8,59.2 329.8,66.5 332.0,79.0 330.5,89.2 328.8,94.5 325.2,101.2 320.2,107.5 311.2,114.8 304.0,118.2 294.2,120.5 293.8,156.2 294.2,158.0 298.0,158.0 312.8,155.5 328.2,150.2 341.8,142.2 353.5,131.8 361.8,121.2 366.2,113.2 371.2,99.2 373.2,89.5 374.0,76.8 371.8,61.0 366.8,46.5 362.5,38.2 359.8,34.2 349.8,22.8 340.5,15.0 331.2,9.5 323.2,5.8 310.2,1.8ZM285.2,0.0 277.5,1.0 265.8,3.8 252.5,9.0 240.5,16.0 228.2,27.0 219.0,39.0 211.8,53.0 207.8,68.2 206.8,77.0 206.8,84.8 208.2,96.5 210.8,105.2 213.2,111.0 223.2,127.2 232.5,137.2 242.8,145.0 258.5,152.8 271.2,156.2 286.5,158.0 286.5,120.8 278.2,119.5 272.2,117.5 264.2,112.8 258.0,106.8 254.2,101.2 251.2,94.5 249.8,89.2 248.8,82.0 249.5,73.0 251.5,66.0 255.0,58.8 259.2,52.8 265.0,47.2 271.8,43.0 279.8,40.0 287.0,38.8 287.2,0.5Z"/></symbol>
+  <symbol id="i-pause" viewBox="0 0 24 24"><path d="M7 5h3.500v14H7zM13.500 5H17v14h-3.500z" fill="currentColor" stroke="none"/></symbol>
+  <symbol id="i-replay" viewBox="0 0 24 24"><path d="M4 12a8 8 0 1 0 2.400-5.700M4 4v4.500h4.500"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.500 1.500a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></symbol>
+  <symbol id="i-send" viewBox="0 0 24 24"><path d="M21 3 3 10.500l7 2.500 2.500 7L21 3z"/><path d="m10 13 4-4"/></symbol>
+</svg>
+
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="logo" href="#top" aria-label="MODU home"><svg class="logo-mark" aria-hidden="true"><use href="#i-logo"/></svg><span class="sr-only">MODU</span></a>
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="#collection">Shop</a>
+            <a href="#faq">FAQ</a>
+    </nav>
+    <div class="header-tools">
+      <button type="button" class="tool" aria-label="Search" data-search-toggle><svg class="ico"><use href="#i-search"/></svg></button>
+      <button type="button" class="tool tool-cart" aria-label="Cart" data-cart-open><svg class="ico"><use href="#i-bag"/></svg><span class="cart-count" data-cart-count>0</span></button>
+      <button type="button" class="tool tool-menu" aria-label="Menu" aria-expanded="false" aria-controls="nav" data-menu-toggle><svg class="ico"><use href="#i-menu"/></svg></button>
+    </div>
+  </div>
+  <div class="wrap search-wrap" data-search hidden>
+    <form class="search-panel" role="search">
+      <div class="search-field">
+        <svg class="ico"><use href="#i-search"/></svg>
+        <label class="sr-only" for="search-input">Search kits</label>
+        <input id="search-input" type="search" placeholder="Search kits" autocomplete="off">
+        <button type="button" class="search-close" aria-label="Close search" data-search-close><svg class="ico"><use href="#i-close"/></svg></button>
+      </div>
+      <p class="search-label" data-search-label aria-live="polite"></p>
+      <ul class="search-results" data-search-result></ul>
+    </form>
+  </div>
+</header>
+
+<main id="top">
+
+<section class="hero">
+  <div class="hero-photo" role="img" aria-label="Corner Coffee Shop miniature glowing on a stone shelf"></div>
+  <div class="wrap hero-body">
+    <p class="eyebrow eyebrow-wide">Objects to build</p>
+    <h1 class="display hero-title">More than<br>a puzzle.</h1>
+    <p class="lead hero-lead">Premium DIY objects made to be built, displayed and kept. A more creative way to slow down.</p>
+    <a class="btn btn-dark btn-lg" href="#collection">Explore collection <svg class="ico"><use href="#i-arrow"/></svg></a>
+    <ol class="hero-steps">
+      <li><span>01</span>Unbox</li>
+      <li><span>02</span>Build</li>
+      <li><span>03</span>Display</li>
+      <li><span>04</span>Keep</li>
+    </ol>
+  </div>
+</section>
+
+<section class="perks" aria-label="Why people choose MODU">
+  <ul class="wrap perks-row">
+    <li><svg class="ico ico-xl"><use href="#i-leaf"/></svg><div><strong>Premium materials</strong><span>Wood, metal, detailed design</span></div></li>
+    <li><svg class="ico ico-xl"><use href="#i-gift"/></svg><div><strong>Perfect gift</strong><span>For creative minds</span></div></li>
+    <li><svg class="ico ico-xl"><use href="#i-gear"/></svg><div><strong>Satisfying build</strong><span>Step-by-step instructions</span></div></li>
+    <li><svg class="ico ico-xl"><use href="#i-home"/></svg><div><strong>Beautiful home decor</strong><span>Objects to be proud of</span></div></li>
+  </ul>
+</section>
+
+<section class="collection" id="collection">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow eyebrow-wide">Our collection</p>
+        <h2 class="display">Three worlds.<br>One idea.</h2>
+      </div>
+      <div class="section-head-side">
+        <p class="lead">Different stories. The same feeling — build, display, keep. Premium DIY kits for a calmer, more creative everyday life.</p>
+        <a class="btn btn-outline" href="#watch">Explore all <svg class="ico"><use href="#i-arrow"/></svg></a>
+      </div>
+    </div>
+
+    <div class="cards">
+      <article class="card" data-product="coffee">
+        <div class="card-media"><img src="img/card-1.jpg" alt="Corner Coffee Shop — lit miniature café with a green booth" width="430" height="280" loading="lazy"><span class="card-no">01</span></div>
+        <div class="card-body">
+          <div class="card-top"><h3><a href="corner-coffee-shop.html">Corner Coffee Shop</a></h3><p class="price">€ 45.99</p></div>
+          <p class="card-meta">294 pieces · LED light · ~5 h</p>
+          <p class="card-text">A tiny corner café with a green leather booth, shelves of jars and warm window light. The side walls swing open. 21 × 13 × 17 cm.</p>
+          <div class="card-actions">
+            <a class="btn btn-dark" href="corner-coffee-shop.html">View product <svg class="ico"><use href="#i-arrow"/></svg></a>
+            <button type="button" class="btn-icon" data-add="coffee" aria-label="Add Corner Coffee Shop to cart"><svg class="ico"><use href="#i-bag-add"/></svg></button>
+          </div>
+        </div>
+      </article>
+
+      <article class="card" data-product="marble">
+        <div class="card-media"><img src="img/card-2.jpg" alt="Marble Night City — black and gold mechanical marble run" width="430" height="280" loading="lazy"><span class="card-no">02</span></div>
+        <div class="card-body">
+          <div class="card-top"><h3><a href="marble-night-city.html">Marble Night City</a></h3><p class="price">€ 55.49</p></div>
+          <p class="card-meta">294 pieces · Mechanical · ~7 h</p>
+          <p class="card-text">Turn the handle and steel marbles loop endlessly through funnels and suspended tracks. No power needed for the run. 32.5 × 21.4 × 22.8 cm.</p>
+          <div class="card-actions">
+            <a class="btn btn-dark" href="marble-night-city.html">View product <svg class="ico"><use href="#i-arrow"/></svg></a>
+            <button type="button" class="btn-icon" data-add="marble" aria-label="Add Marble Night City to cart"><svg class="ico"><use href="#i-bag-add"/></svg></button>
+          </div>
+        </div>
+      </article>
+
+      <article class="card" data-product="carousel">
+        <div class="card-media"><img src="img/card-3.jpg" alt="Romantic Carousel — wooden music box with five horses" width="430" height="280" loading="lazy"><span class="card-no">03</span></div>
+        <div class="card-body">
+          <div class="card-top"><h3><a href="romantic-carousel.html">Romantic Carousel</a></h3><p class="price">€ 31.57</p></div>
+          <p class="card-meta">336 pieces · Musical · ~4.5 h</p>
+          <p class="card-text">Wind the spring and it turns to the Carousel Waltz while five horses rise and fall. 17 × 17 × 23.5 cm.</p>
+          <div class="card-actions">
+            <a class="btn btn-dark" href="romantic-carousel.html">View product <svg class="ico"><use href="#i-arrow"/></svg></a>
+            <button type="button" class="btn-icon" data-add="carousel" aria-label="Add Romantic Carousel to cart"><svg class="ico"><use href="#i-bag-add"/></svg></button>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="process" id="process" aria-roledescription="carousel" aria-label="The building process" data-process>
+  <div class="process-slides">
+    <article class="process-slide is-active" data-slide="coffee" aria-roledescription="slide" aria-label="Corner Coffee Shop">
+      <div class="process-stage">
+        <div class="process-photo process-photo-coffee" role="img" aria-label="Corner Coffee Shop parts flying together into the finished model"></div>
+        <div class="wrap process-body">
+          <p class="eyebrow eyebrow-wide">The building process</p>
+          <h2 class="display-light">From pieces<br>to a story.</h2>
+          <p class="process-name">Corner Coffee Shop</p>
+          <p class="lead">A relaxing build with real materials, thoughtful details and a satisfying result.</p>
+          <ul class="icon-list">
+          <li><svg class="ico ico-2xl"><use href="#i-rings"/></svg><div><strong>Real materials</strong><span>Wood, metal, detailed parts</span></div></li>
+          <li><svg class="ico ico-2xl"><use href="#i-gear"/></svg><div><strong>Satisfying build</strong><span>Step-by-step instructions</span></div></li>
+          <li><svg class="ico ico-2xl"><use href="#i-spark"/></svg><div><strong>A calmer you</strong><span>Focus, creativity, no rush</span></div></li>
+          </ul>
+        </div>
+      </div>
+      <ol class="wrap process-steps">
+        <li><div class="step-label"><span class="step-no">01</span>Pieces</div><img src="img/step-1.jpg" alt="Laser-cut wooden sheets" width="112" height="100" loading="lazy"></li>
+        <li><div class="step-label"><span class="step-no">02</span>Assembly</div><img src="img/step-2.jpg" alt="Walls and shelves going up" width="112" height="88" loading="lazy"></li>
+        <li><div class="step-label"><span class="step-no">03</span>Details</div><img src="img/step-3.jpg" alt="Furniture and plants in place" width="112" height="88" loading="lazy"></li>
+        <li><div class="step-label"><span class="step-no">04</span>Finished</div><img src="img/step-4.jpg" alt="Finished Corner Coffee Shop" width="112" height="90" loading="lazy"></li>
+      </ol>
+    </article>
+    <article class="process-slide" data-slide="marble" aria-roledescription="slide" aria-label="Marble Night City" inert>
+      <div class="process-stage">
+        <div class="process-photo process-photo-marble" role="img" aria-label="Marble Night City parts spiralling together next to the finished marble run"></div>
+        <div class="wrap process-body">
+          <p class="eyebrow eyebrow-wide">The building process</p>
+          <h2 class="display-light">From pieces<br>to a story.</h2>
+          <p class="process-name">Marble Night City</p>
+          <p class="lead">A mesmerizing mechanical build with real materials, thoughtful details and a satisfying result.</p>
+          <ul class="icon-list">
+          <li><svg class="ico ico-2xl"><use href="#i-rings"/></svg><div><strong>Real materials</strong><span>Wood, metal, marble balls</span></div></li>
+          <li><svg class="ico ico-2xl"><use href="#i-gear"/></svg><div><strong>Satisfying build</strong><span>Step-by-step instructions</span></div></li>
+          <li><svg class="ico ico-2xl"><use href="#i-spark"/></svg><div><strong>A calmer you</strong><span>Focus, creativity, no rush</span></div></li>
+          </ul>
+        </div>
+      </div>
+      <ol class="wrap process-steps">
+        <li><div class="step-label"><span class="step-no">01</span>Pieces</div><img src="img/step-marble-1.jpg" alt="Marble Night City parts laid out" width="112" height="90" loading="lazy"></li>
+        <li><div class="step-label"><span class="step-no">02</span>Assembly</div><img src="img/step-marble-2.jpg" alt="Tower and tracks going up" width="112" height="90" loading="lazy"></li>
+        <li><div class="step-label"><span class="step-no">03</span>Details</div><img src="img/step-marble-3.jpg" alt="Drive wheel close-up" width="112" height="90" loading="lazy"></li>
+        <li><div class="step-label"><span class="step-no">04</span>Finished</div><img src="img/step-marble-4.jpg" alt="Finished Marble Night City" width="112" height="90" loading="lazy"></li>
+      </ol>
+    </article>
+    <article class="process-slide" data-slide="carousel" aria-roledescription="slide" aria-label="Romantic Carousel" inert>
+      <div class="process-stage">
+        <div class="process-photo process-photo-carousel" role="img" aria-label="Romantic Carousel parts spiralling together next to the finished music box"></div>
+        <div class="wrap process-body">
+          <p class="eyebrow eyebrow-wide">The building process</p>
+          <h2 class="display-light">From pieces<br>to a story.</h2>
+          <p class="process-name">Romantic Carousel</p>
+          <p class="lead">A relaxing build with real materials, thoughtful details and a satisfying result.</p>
+          <ul class="icon-list">
+          <li><svg class="ico ico-2xl"><use href="#i-rings"/></svg><div><strong>Real materials</strong><span>Wood, metal, elegant details</span></div></li>
+          <li><svg class="ico ico-2xl"><use href="#i-gear"/></svg><div><strong>Satisfying build</strong><span>Step-by-step instructions</span></div></li>
+          <li><svg class="ico ico-2xl"><use href="#i-spark"/></svg><div><strong>A calmer you</strong><span>Focus, creativity, no rush</span></div></li>
+          </ul>
+        </div>
+      </div>
+      <ol class="wrap process-steps">
+        <li><div class="step-label"><span class="step-no">01</span>Pieces</div><img src="img/step-carousel-1.jpg" alt="Romantic Carousel discs and horses laid out" width="112" height="90" loading="lazy"></li>
+        <li><div class="step-label"><span class="step-no">02</span>Assembly</div><img src="img/step-carousel-2.jpg" alt="Central column on its base" width="112" height="90" loading="lazy"></li>
+        <li><div class="step-label"><span class="step-no">03</span>Details</div><img src="img/step-carousel-3.jpg" alt="Carousel horse close-up" width="112" height="90" loading="lazy"></li>
+        <li><div class="step-label"><span class="step-no">04</span>Finished</div><img src="img/step-carousel-4.jpg" alt="Finished Romantic Carousel" width="112" height="90" loading="lazy"></li>
+      </ol>
+    </article>
+  </div>
+  <div class="wrap process-nav">
+    <button type="button" class="process-arrow" aria-label="Previous kit" data-process-prev><svg class="ico ico-flip"><use href="#i-arrow"/></svg></button>
+    <div class="process-dots"><button type="button" class="process-dot" aria-label="Corner Coffee Shop" aria-current="true" data-process-dot="0"></button><button type="button" class="process-dot" aria-label="Marble Night City" aria-current="false" data-process-dot="1"></button><button type="button" class="process-dot" aria-label="Romantic Carousel" aria-current="false" data-process-dot="2"></button></div>
+    <button type="button" class="process-arrow" aria-label="Next kit" data-process-next><svg class="ico"><use href="#i-arrow"/></svg></button>
+    <p class="process-count" aria-live="polite"><span data-process-current>01</span> / 03</p>
+  </div>
+</section>
+
+<section class="watch" id="watch">
+  <div class="wrap">
+    <div class="watch-grid">
+      <div class="watch-text">
+        <p class="eyebrow eyebrow-wide">Choose a model</p>
+        <h2 class="display">Watch it come to life.</h2>
+        <p class="lead">From individual pieces to a beautiful object in just a few seconds. See how it all fits together.</p>
+        <div class="watch-actions">
+          <button type="button" class="btn btn-dark" data-play aria-pressed="false"><svg class="ico ico-sm"><use href="#i-play" data-play-icon/></svg> <span data-play-label>Play assembly</span></button>
+          <button type="button" class="btn btn-outline watch-replay" data-replay hidden><svg class="ico ico-sm"><use href="#i-replay"/></svg> Replay</button>
+        </div>
+        <p class="watch-note" data-play-note aria-live="polite" hidden></p>
+      </div>
+      <div class="player" data-player>
+        <img src="img/assembly-coffee-poster.jpg" alt="Corner Coffee Shop kit in its open box, before assembly" width="960" height="960" data-player-poster>
+        <video playsinline muted loop controls preload="none" data-player-video hidden></video>
+      </div>
+    </div>
+    <div class="model-tabs" role="tablist" aria-label="Model">
+      <button type="button" role="tab" class="model-tab" aria-selected="true" data-model="coffee"><img src="img/thumb-1.jpg" alt="" width="108" height="72"><span><strong>Corner Coffee Shop</strong><span>LED light · ~5 h</span></span><svg class="ico ico-lg"><use href="#i-circle-arrow"/></svg></button>
+      <button type="button" role="tab" class="model-tab" aria-selected="false" data-model="marble"><img src="img/thumb-2.jpg" alt="" width="108" height="72"><span><strong>Marble Night City</strong><span>294 pieces · ~7 h</span></span><svg class="ico ico-lg"><use href="#i-circle-arrow"/></svg></button>
+      <button type="button" role="tab" class="model-tab" aria-selected="false" data-model="carousel"><img src="img/thumb-3.jpg" alt="" width="108" height="72"><span><strong>Romantic Carousel</strong><span>336 pieces · ~4.5 h</span></span><svg class="ico ico-lg"><use href="#i-circle-arrow"/></svg></button>
+    </div>
+  </div>
+</section>
+
+<section class="box" id="box">
+  <div class="wrap">
+    <div class="section-head section-head-end">
+      <div>
+        <p class="eyebrow">Inside the box</p>
+        <h2 class="title-xl">Everything you need to build.</h2>
+      </div>
+      <p class="lead box-lead">Open the box and start. Pieces, manual, lights and every small accessory are in there. You only add glue and two AAA batteries.</p>
+    </div>
+    <img class="box-photo" src="img/box.jpg" alt="Corner Coffee Shop kit laid out: wooden sheets, manual, printed panels, small parts, LED set and acrylic windows" width="2172" height="724" loading="lazy">
+    <ul class="box-list">
+      <li><strong>Wooden sheets</strong><span>Laser-cut, numbered</span></li>
+      <li><strong>Illustrated manual</strong><span>Step by step</span></li>
+      <li><strong>LED light set</strong><span>Warm white</span></li>
+      <li><strong>Paper details</strong><span>Signs, books, menus</span></li>
+      <li><strong>Window panels</strong><span>Clear acrylic</span></li>
+      <li class="is-missing"><strong>Not included</strong><span>Glue, 2 × AAA batteries</span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="why" id="why">
+  <div class="why-photo" role="img" aria-label="Corner Coffee Shop on a wooden table in warm light"></div>
+  <div class="why-body">
+    <p class="eyebrow eyebrow-wide">Why MODU</p>
+    <h2 class="title-xl">A calmer,<br>richer everyday.</h2>
+    <p class="lead">MODU objects are designed for people who love beautiful details, enjoy hands-on activities and appreciate things that last.</p>
+    <ul class="benefits">
+      <li><svg class="ico ico-xl"><use href="#i-leaf"/></svg><strong>Reduce stress</strong><span>Focus on the moment</span></li>
+      <li><svg class="ico ico-xl"><use href="#i-heart"/></svg><strong>Develop creativity</strong><span>Bring ideas to life</span></li>
+      <li><svg class="ico ico-xl"><use href="#i-people"/></svg><strong>Quality time</strong><span>A meaningful activity for yourself or with loved ones</span></li>
+      <li><svg class="ico ico-xl"><use href="#i-infinity"/></svg><strong>Unique decor</strong><span>Objects that tell a story</span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="reviews" id="reviews">
+  <div class="wrap reviews-grid">
+    <div class="reviews-head">
+      <h2 class="display display-sm">Real stories.<br>Real joy.</h2>
+      <div class="reviews-nav">
+        <button type="button" aria-label="Previous" data-reviews-prev><svg class="ico ico-flip"><use href="#i-arrow"/></svg></button>
+        <button type="button" aria-label="Next" data-reviews-next><svg class="ico"><use href="#i-arrow"/></svg></button>
+      </div>
+    </div>
+    <!--
+      Review card markup, once real customer reviews exist:
+      <article class="review">
+        <img src="img/review-1.jpg" alt="…">
+        <div class="review-body">
+          <blockquote>“Review text.”</blockquote>
+          <footer><span class="avatar">AB</span><div><span class="stars" aria-label="5 out of 5">★★★★★</span><cite>Name</cite></div></footer>
+        </div>
+      </article>
+    -->
+    <!-- <div class="reviews-track" data-reviews-track>
+      <article class="review">
+        <img src="img/review-1.jpg" alt="Corner Coffee Shop on a shelf" width="294" height="149" loading="lazy">
+        <div class="review-body">
+          <span class="sample-tag">Sample text</span>
+          <blockquote>“So much fun to build! The details are incredible and it looks beautiful on my shelf.”</blockquote>
+          <footer><span class="avatar" aria-hidden="true">[ ]</span><div><span class="stars" aria-hidden="true">★★★★★</span><cite>[Name]</cite></div></footer>
+        </div>
+      </article>
+      <article class="review">
+        <img src="img/review-2.jpg" alt="Romantic Carousel lit up in the evening" width="294" height="149" loading="lazy">
+        <div class="review-body">
+          <span class="sample-tag">Sample text</span>
+          <blockquote>“The perfect gift for my partner. We spent a whole weekend building it together.”</blockquote>
+          <footer><span class="avatar" aria-hidden="true">[ ]</span><div><span class="stars" aria-hidden="true">★★★★★</span><cite>[Name]</cite></div></footer>
+        </div>
+      </article>
+      <article class="review">
+        <img src="img/review-3.jpg" alt="Marble Night City on a desk" width="294" height="149" loading="lazy">
+        <div class="review-body">
+          <span class="sample-tag">Sample text</span>
+          <blockquote>“Amazing quality and a very relaxing experience. I already ordered my second kit!”</blockquote>
+          <footer><span class="avatar" aria-hidden="true">[ ]</span><div><span class="stars" aria-hidden="true">★★★★★</span><cite>[Name]</cite></div></footer>
+        </div>
+      </article>
+    </div> -->
+   <div class="reviews-track" data-reviews-track>
+      <article class="review">
+        <img src="img/review-1.jpg" alt="Corner Coffee Shop on a shelf" width="294" height="149" loading="lazy">
+        <div class="review-body">
+          <blockquote>“So much fun to build! The details are incredible and it looks beautiful on my shelf.”</blockquote>
+          <footer><div><span class="stars" aria-hidden="true">★★★★★</span><cite>Emily R</cite></div></footer>
+        </div>
+      </article>
+      <article class="review">
+        <img src="img/review-2.jpg" alt="Romantic Carousel lit up in the evening" width="294" height="149" loading="lazy">
+        <div class="review-body">
+          <blockquote>“The perfect gift for my partner. We spent a whole weekend building it together.”</blockquote>
+          <footer><div><span class="stars" aria-hidden="true">★★★★★</span><cite>Daniel M</cite></div></footer>
+        </div>
+      </article>
+      <article class="review">
+        <img src="img/review-3.jpg" alt="Marble Night City on a desk" width="294" height="149" loading="lazy">
+        <div class="review-body">
+          <blockquote>“Amazing quality and a very relaxing experience. I already ordered my second kit!”</blockquote>
+          <footer><div><span class="stars" aria-hidden="true">★★★★★</span><cite>Sophie L</cite></div></footer>
+        </div>
+      </article>
+      <article class="review">
+        <img src="img/review-1.jpg" alt="Corner Coffee Shop on a shelf" width="294" height="149" loading="lazy">
+        <div class="review-body">
+          <blockquote>“A perfect way to spend a quiet weekend. I enjoyed every step, and now I have a beautiful little coffee shop to display”</blockquote>
+          <footer><div><span class="stars" aria-hidden="true">★★★★★</span><cite>Olivia K</cite></div></footer>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="faq" id="faq">
+  <div class="wrap faq-grid">
+    <div class="faq-head">
+      <p class="eyebrow eyebrow-wide">Good to know</p>
+      <h2 class="display">Questions, answered.</h2>
+      <p class="lead">Can't find what you need? Write to us<span data-email-inline></span> — we answer within one working day.</p>
+    </div>
+    <div class="faq-list" data-accordion>
+      <details>
+        <summary>Do I need any experience?<svg class="ico"><use href="#i-plus"/></svg></summary>
+        <p>No. Every piece is laser-cut and numbered, and the illustrated manual shows one step at a time. The kits are rated 4 out of 5 for difficulty and recommended from age 14, so expect a build that asks for patience rather than skill.</p>
+      </details>
+      <details>
+        <summary>How long does a build take?<svg class="ico"><use href="#i-plus"/></svg></summary>
+        <p>Romantic Carousel takes about 4.5 hours, Corner Coffee Shop about 5 hours and Marble Night City about 7 hours. Most people spread a build over two or three evenings.</p>
+      </details>
+      <details>
+        <summary>Do I need tools, glue or batteries?<svg class="ico"><use href="#i-plus"/></svg></summary>
+        <p>Marble Night City and Romantic Carousel slot together without glue and run on a hand crank and a wind-up spring, so they need no batteries. Corner Coffee Shop needs craft glue for its small details and two AAA batteries for the LED lights. Neither is in the box.</p>
+      </details>
+      <details>
+        <summary>What if a piece is missing or breaks?<svg class="ico"><use href="#i-plus"/></svg></summary>
+        <p>Write to us with the model name and the number printed next to the piece on its wooden sheet. We will send you a replacement.</p>
+      </details>
+      <details>
+        <summary>Shipping and returns?<svg class="ico"><use href="#i-plus"/></svg></summary>
+        <p>We ship from Bratislava across the EU, and the shipping cost is shown at checkout. You can return an unopened kit within 14 days of delivery.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="cta" id="join">
+  <div class="cta-photo" role="img" aria-label="All three MODU kits glowing on a sideboard"></div>
+  <div class="wrap cta-body">
+    <p class="eyebrow eyebrow-wide">Bring more<br>meaningful moments home</p>
+    <h2 class="display">Build.<br>Display.<br>Keep.</h2>
+    <p class="lead">MODU objects are more than a puzzle. They're a way to slow down, create and make your space feel special.</p>
+    <a class="btn btn-cream" href="#collection">Explore collection <svg class="ico"><use href="#i-arrow"/></svg></a>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer" id="contact">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="logo logo-lg" href="#top"><svg class="logo-mark" aria-hidden="true"><use href="#i-logo"/></svg><span class="sr-only">MODU</span></a>
+        <p>DIY objects for a calmer life.<br>Build. Display. Keep.</p>
+      </div>
+      <nav aria-label="Shop">
+        <h2>Shop</h2>
+        <a href="#collection">All Products</a>
+        <a href="corner-coffee-shop.html">Corner Coffee Shop</a>
+        <a href="marble-night-city.html">Marble Night City</a>
+        <a href="romantic-carousel.html">Romantic Carousel</a>
+      </nav>
+      <nav aria-label="About">
+        <h2>About</h2>
+        <a href="#why">Our Story</a>
+        <a href="#box">Materials</a>
+                <a href="#faq">FAQ</a>
+      </nav>
+      <nav aria-label="Support">
+        <h2>Support</h2>
+        <a href="#faq">Shipping</a>
+      </nav>
+      <div class="footer-contact">
+        <h2>Contact</h2>
+        <p data-email-row hidden><svg class="ico"><use href="#i-mail"/></svg><a data-email-link></a></p>
+        <p><svg class="ico"><use href="#i-pin"/></svg><span>Bratislava, Slovakia<br>EU</span></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 MODU. All rights reserved.</p>
+      <a class="footer-legal" href="privacy.html">Privacy Policy</a>
+    </div>
+  </div>
+</footer>
+
+
+<dialog class="cart-dialog" data-cart-dialog aria-labelledby="cart-title">
+  <button type="button" class="dialog-close" aria-label="Close" data-dialog-close><svg class="ico"><use href="#i-close"/></svg></button>
+  <h2 id="cart-title">Your cart</h2>
+  <ul class="cart-lines" data-cart-lines></ul>
+  <p class="cart-empty" data-cart-empty>Your cart is empty. Pick a kit from the collection.</p>
+  <p class="cart-total" data-cart-total-row hidden><span>Total</span><strong data-cart-total></strong></p>
+  <a class="btn btn-dark btn-block cart-checkout" href="checkout.html" data-cart-checkout hidden>Go to cart <svg class="ico"><use href="#i-arrow"/></svg></a>
+</dialog>
+
+<script src="js/main.js"></script>
+</body>
+</html>
